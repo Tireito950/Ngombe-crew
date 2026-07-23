@@ -265,7 +265,8 @@ a:hover {
    ========================================================================== */
 .page-header {
     position: relative;
-    background: linear-gradient(135deg, var(--ksa-maroon-dark) 0%, var(--ksa-maroon) 100%);
+     background: url('image/group.png') center/cover no-repeat; /*linear-gradient(135deg, var(--ksa-maroon-dark) 0%, var(--ksa-maroon) 100%);  */
+    opacity: 0.7;
     color: var(--ksa-white);
     padding: 60px 0 100px;
     text-align: center;
@@ -301,6 +302,18 @@ a:hover {
 
 .page-breadcrumb a {
     color: var(--ksa-white);
+}
+
+.page-breadcrumb   :hover{
+    /* text-decoration: underline; */
+    background: var(--ksa-green-dark);
+    border-radius: 4px;
+    border: 10px;
+    
+}
+
+.page-breadcrumb :active{
+    transform: scale(0.89);
 }
 
 .page-header-wave {
